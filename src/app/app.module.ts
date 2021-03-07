@@ -7,12 +7,14 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ComputersComponent } from './computers/computers.component';
 import { HttpClientModule } from '@angular/common/http';
 import { ComputerDetailComponent } from './computer-detail/computer-detail.component';
+import { ComputerIncludeComponent } from './computer-include/computer-include.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ComputersComponent,
-    ComputerDetailComponent
+    ComputerDetailComponent,
+    ComputerIncludeComponent
   ],
   imports: [
     BrowserModule,

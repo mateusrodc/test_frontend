@@ -31,5 +31,17 @@ export class ComputersComponent implements OnInit {
     }
     
   }
+  excluir(id: number) {
+    
+    this.computerService.excluirComputer(id).subscribe(
+      (retorno) => {
+            this.getList();
+            console.log(retorno.mensagem);
+          },
+          error => {
+            console.log(error.error.mensagem);
+          }
+    );
+  }
 
 }

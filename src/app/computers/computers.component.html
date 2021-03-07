@@ -24,7 +24,7 @@
             <td>
                 <a class="btn btn-info" role='button' routerLink="computers/{{computer.id}}">Visualizar</a>
                 <a class="btn btn-warning" role='button' routerLink="computers/{{computer.id}}">Editar</a>
-                <a class="btn btn-danger" role='button' routerLink="computers/{{computer.id}}">Excluir</a>
+                <a class="btn btn-danger" role='button' (click)="excluir(computer.id)">Excluir</a>
             </td>
           </tr>
         </tbody>

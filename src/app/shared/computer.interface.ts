@@ -1,5 +1,5 @@
 export interface Computer{
-    id:Number;
+    id:number;
     marca:String;
     modelo:String;
     placaMae:String;
