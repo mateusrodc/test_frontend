@@ -14,4 +14,8 @@ export class ComputerService{
     public getComputers(): Observable<Array<Computer>> {
         return this.http.get<Array<Computer>>(`${environment.api_URL}v1/computers`);
     }
+
+    public getComputerById(id: number): Observable<Computer>{
+        return this.http.get<Computer>(`${environment.api_URL}v1/computers/${id}`);
+    }
 }

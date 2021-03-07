@@ -1,3 +1,7 @@
 .computer-container{
     margin-top: 70px;
 }
+.space {
+    display: flex;
+    justify-content: center;
+  }
