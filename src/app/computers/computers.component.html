@@ -1,0 +1,34 @@
+<div class="container computer-container">
+    <h1>Computadores</h1>
+    <br/>
+    <a class="btn btn-primary" role='button' routerLink="computers/">Novo Computador</a>
+    <br/>
+    <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">Marca</th>
+            <th scope="col">Modelo</th>
+            <th scope="col">HD</th>
+            <th scope="col">Memoria RAM</th>
+            <th scope="col">Ações</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let computer of computers">
+            <th scope="row">{{computer.id}}</th>
+            <td>{{computer.marca}}</td>
+            <td>{{computer.modelo}}</td>
+            <td>{{computer.hd}}</td>
+            <td>{{computer.memoriaRam}}</td>
+            <td>
+                <a class="btn btn-info" role='button' routerLink="computers/{{computer.id}}">Visualizar</a>
+                <button type="button" class="btn btn-warning">Editar</button>
+                <button type="button" class="btn btn-danger">Excluir</button>
+            </td>
+          </tr>
+        </tbody>
+    </table>
+    
+</div>
+
