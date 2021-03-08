@@ -1,7 +1,7 @@
 <div class="container computer-container">
     <h1>Computadores</h1>
     <br/>
-    <a class="btn btn-primary" role='button' routerLink="/">Novo Computador</a>
+    <a class="btn btn-primary" role='button' routerLink="newcomputer">Novo Computador</a>
     <br/>
     <table class="table">
         <thead>
@@ -23,7 +23,7 @@
             <td>{{computer.memoriaRam}}</td>
             <td>
                 <a class="btn btn-info" role='button' routerLink="computers/{{computer.id}}">Visualizar</a>
-                <a class="btn btn-warning" role='button' routerLink="computers/{{computer.id}}">Editar</a>
+                <a class="btn btn-warning mr-3 ml-3" role='button' routerLink="updatecomputer/{{computer.id}}">Editar</a>
                 <a class="btn btn-danger" role='button' (click)="excluir(computer.id)">Excluir</a>
             </td>
           </tr>

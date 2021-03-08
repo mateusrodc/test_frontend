@@ -18,7 +18,10 @@ export class ComputerService{
     public getComputerById(id: number): Observable<Computer>{
         return this.http.get<Computer>(`${environment.api_URL}v1/computers/${id}`);
     }
+    public postComputer(computer: Computer): Observable<any>{
+        return this.http.post<any>(`${environment.api_URL}v1/computers`, computer);
+    }
     public excluirComputer(id: number): Observable<any> {
         return this.http.delete(`${environment.api_URL}v1/computers/${id}`);
-      }
+    }
 }
