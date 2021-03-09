@@ -1,8 +1,14 @@
 <div class="container computer-container">
     <h1>Computadores</h1>
     <br/>
-    <a class="btn btn-primary" role='button' routerLink="newcomputer">Novo Computador</a>
+    <a class="btn btn-primary mb-3" role='button' routerLink="newcomputer">Novo Computador</a>
     <br/>
+    <input type="text" 
+      id="queryField" 
+      class="form-control mb-3"
+      [(ngModel)]="term" 
+      placeholder="Busque por um Computador especifico">
+    
     <table class="table">
         <thead>
           <tr>
@@ -15,7 +21,7 @@
           </tr>
         </thead>
         <tbody>
-          <tr *ngFor="let computer of computers">
+          <tr *ngFor="let computer of computers| filter:term">
             <th scope="row">{{computer.id}}</th>
             <td>{{computer.marca}}</td>
             <td>{{computer.modelo}}</td>

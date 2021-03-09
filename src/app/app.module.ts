@@ -9,6 +9,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { ComputerDetailComponent } from './computer-detail/computer-detail.component';
 import { ComputerIncludeComponent } from './computer-include/computer-include.component';
 import { ComputerUpdateComponent } from './computer-update/computer-update.component';
+import { Ng2SearchPipeModule } from 'ng2-search-filter';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { ComputerUpdateComponent } from './computer-update/computer-update.compo
     BrowserAnimationsModule,
     HttpClientModule,
     ReactiveFormsModule,
-    FormsModule
+    FormsModule,
+    Ng2SearchPipeModule
   ],
   providers: [],
   bootstrap: [AppComponent]
