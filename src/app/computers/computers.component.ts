@@ -24,7 +24,6 @@ export class ComputersComponent implements OnInit {
     try{
       this.computerService.getComputers().subscribe(data => {
       this.computers = data;
-      console.log(this.computers);
       });
     }catch(err){
       console.log(err);

@@ -24,4 +24,7 @@ export class ComputerService{
     public excluirComputer(id: number): Observable<any> {
         return this.http.delete(`${environment.api_URL}v1/computers/${id}`);
     }
+    public updateComputer(computer: Computer): Observable<any> {
+        return this.http.put<any>(`${environment.api_URL}v1/computers/${computer.id}`, computer);
+    }
 }

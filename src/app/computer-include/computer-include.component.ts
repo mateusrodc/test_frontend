@@ -1,6 +1,6 @@
 import { Component, OnInit,Injectable } from '@angular/core';
 import {ComputerService} from '../shared/computer.service';
-import {FormControl, FormGroup, Validators, NgForm} from '@angular/forms';
+import {FormControl, FormGroup, Validators} from '@angular/forms';
 import {Router} from '@angular/router';
 
 
